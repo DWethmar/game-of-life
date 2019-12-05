@@ -4,18 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^24.0.23",
     "@types/lodash": "^4.14.149",
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-prettier": "^3.1.1",
+    "jest": "^24.9.0",
     "parcel-bundler": "^1.12.4",
+    "ts-jest": "^24.2.0",
     "typescript": "^3.7.2"
   },
   "dependencies": {
