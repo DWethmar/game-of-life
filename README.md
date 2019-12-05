@@ -1,1 +1,0 @@
-@pixi/filter-drop-shadow
