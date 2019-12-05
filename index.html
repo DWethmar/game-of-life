@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>Conway's game of life</title>
+</head>
+<body>
+  <div>
+    <p>
+      The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.
+    </p>
+    <p>
+        At each step in time, the following transitions occur:
+    </p>
+    <ul>
+        <li>Any live cell with fewer than two live neighbours dies, as if by underpopulation.</li>
+        <li>Any live cell with two or three live neighbours lives on to the next generation.</li>
+        <li>Any live cell with more than three live neighbours dies, as if by overpopulation.</li>
+        <li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction</li>
+    </ul>
+  </div>
+
+  <div id="gof"></div>
+
+  <hr />
+
+  <div>
+    <button id="start">start</button>
+    <button id="pause">pause</button>
+    <button id="step">step</button>
+  </div>
+
+  <hr />
+
+  <div>
+    <div>Started with <span id="started-with">0</span> alive cells</div>
+    <div>Alive: <span id="cells-alive"></span></div>
+    <div>FPS: <span id="fps-counter"></span></div>
+  </div>
+
+  <hr />
+
+  <form>
+    <h1>Create new grid</h1>
+    <div>
+      <label>Cell Size (Max 15 pixels)</label>
+      <input name="cellSize" type="number" />
+    </div>
+
+    <div>
+      <label>Grid Size (Max 250 cells width and height)</label>
+      <input name="gridSize" type="number" />
+    </div>
+
+    <div>
+      <label>Max FPS (Max 60)</label>
+      <input name="FPS" type="number" />
+    </div>
+
+    <div>
+        <label>Percentage alive cells</label>
+        <input name="start-percentage" type="number" />
+    </div>
+
+    <input type="submit">
+  </form>
+  <script type="text/javascript" src="./main.ts"></script>
+</body>
+</html>
