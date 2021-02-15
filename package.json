@@ -24,6 +24,6 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "lodash": "^4.17.15",
-    "pixi.js": "^5.2.0"
+    "pixi.js": "^5.3.7"
   }
 }
